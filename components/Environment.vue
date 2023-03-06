@@ -9,7 +9,7 @@ import { getLive } from '@/lib/apiTarget'
 export default class Environment extends Vue {
   data() {
     // No need to make this reactive (for now)
-    const isLive = getLive()
+    const isLive = false
 
     return {
       colorClass: isLive ? 'red--text' : 'green--text',
